@@ -64,40 +64,51 @@ b)
 
 Trying to solve the equation if we replace X and Y we get:
 
-X = X + N_Y + N_X
-Y = Y + N_X + N_Y
+![X = X + N_Y + N_X](https://render.githubusercontent.com/render/math?math=X%20%3D%20X%20%2B%20N_Y%20%2B%20N_X)
+
+![Y = Y + N_X + N_Y](https://render.githubusercontent.com/render/math?math=Y%20%3D%20Y%20%2B%20N_X%20%2B%20N_Y)
+
 
 Any of these equations leads to:
 
-N_Y = -N_X 
+![N_Y = -N_X ](https://render.githubusercontent.com/render/math?math=N_Y%20%3D%20-N_X%20)
 
-Which is impossible if N_X and N_Y are independent.
+Which is impossible if ![N_X \perp\!\!\!\!\!\!\perp N_Y](https://render.githubusercontent.com/render/math?math=N_X%20%5Cperp%5C!%5C!%5C!%5C!%5C!%5C!%5Cperp%20N_Y).
 
-To come up with candidate X, Y, N_X, N_Y:
 
-Assuming N_X = -N_Y, we can solve:
+To come up with candidate ![X, Y, N_X, N_Y](https://render.githubusercontent.com/render/math?math=X%2C%20Y%2C%20N_X%2C%20N_Y):
 
-X = alpha*N_X
-Y = beta*N_X
+Assuming ![N_Y = -N_X ](https://render.githubusercontent.com/render/math?math=N_Y%20%3D%20-N_X%20), we can solve:
 
-alpha * N_X = beta * N_X + N_X
-beta * N_X = alpha * N_X - N_X
+![X = \alpha N_X](https://render.githubusercontent.com/render/math?math=X%20%3D%20%5Calpha%20N_X)
 
-alpha = beta + 1
-beta = alpha - 1
+![Y = \beta N_X](https://render.githubusercontent.com/render/math?math=Y%20%3D%20%5Cbeta%20N_X)
+
+
+![\alpha N_X = \beta N_X + N_X](https://render.githubusercontent.com/render/math?math=%5Calpha%20N_X%20%3D%20%5Cbeta%20N_X%20%2B%20N_X)
+
+![\beta N_X = \alpha N_X - N_X](https://render.githubusercontent.com/render/math?math=%5Cbeta%20N_X%20%3D%20%5Calpha%20N_X%20-%20N_X)
+
+
+![\alpha = \beta + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cbeta%20%2B%201)
+
+![\beta =  \alpha - 1](https://render.githubusercontent.com/render/math?math=%5Cbeta%20%3D%20%20%5Calpha%20-%201)
+
 
 Both equations give the same information:
 
-alpha = beta + 1 
+![\alpha = \beta + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cbeta%20%2B%201)
 
-Thus we can choose alpha = 2, beta= 3 and it will be a valid vector:
+Thus we can choose ![\alpha = 2, \beta = 3](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%202%2C%20%5Cbeta%20%3D%203) and it will be a valid vector. Thus:
 
-Thus:
+![N_X := N(0,1)](https://render.githubusercontent.com/render/math?math=N_X%20%3A%3D%20N(0%2C1))
 
-N_X := N(0,1)
-N_Y := -N_X
-X:= 2* N_X
-Y:= 3* N_X
+![N_Y := -N_X](https://render.githubusercontent.com/render/math?math=N_Y%20%3A%3D%20-N_X)
+
+![X:= 2* N_X](https://render.githubusercontent.com/render/math?math=X%3A%3D%202*%20N_X)
+
+![Y:= 3* N_X](https://render.githubusercontent.com/render/math?math=Y%3A%3D%203*%20N_X)
+
 
 Is a valid solution.
 
