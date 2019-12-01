@@ -4,17 +4,19 @@
 
 We know that:
 
-E = 4C + $N_Y$ and the right hand side distributes like ~ N(0, 17)
+![E = 4C + N_Y](https://render.githubusercontent.com/render/math?math=E%20%3D%204C%20%2B%20N_Y) and the right hand side distributes like ~ N(0, 17)
 
 We want to understand the distributions of 4C and N_Y when their sum is 2.
 
 The distributions of the distributions that form a conditional distribution of a Gaussian follow this result: 
 https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random
 
-4C ~ N(2*16/17, 16/17) 
-N_Y ~ N(2*1/17, 1/17)
+![4C ~ N(2*\frac{16}{17}, \frac{16}{17})](https://render.githubusercontent.com/render/math?math=4C%20~%20N(2*%5Cfrac%7B16%7D%7B17%7D%2C%20%5Cfrac%7B16%7D%7B17%7D))
+![N_Y ~ N(2*\frac{1}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(2*%5Cfrac%7B1%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
 
-Thus C ~ N(2*16/(4*17), 16/(16*17)) --> N(8/17, 1/17)
+Thus:
+![C ~ N(\frac{2*16}{(4*17)}, \frac{16}{(16*17)}) \xrightarrow{} N(\frac{8}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=C%20~%20N(%5Cfrac%7B2*16%7D%7B(4*17)%7D%2C%20%5Cfrac%7B16%7D%7B(16*17)%7D)%20%5Cxrightarrow%7B%7D%20N(%5Cfrac%7B8%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
+
 
 ### 3.7
 
