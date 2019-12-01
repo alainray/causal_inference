@@ -15,6 +15,7 @@ https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribu
 ![N_Y ~ N(2*\frac{1}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(2*%5Cfrac%7B1%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
 
 Thus:
+
 ![C ~ N(\frac{2*16}{(4*17)}, \frac{16}{(16*17)}) \xrightarrow{} N(\frac{8}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=C%20~%20N(%5Cfrac%7B2*16%7D%7B(4*17)%7D%2C%20%5Cfrac%7B16%7D%7B(16*17)%7D)%20%5Cxrightarrow%7B%7D%20N(%5Cfrac%7B8%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
 
 
@@ -22,8 +23,8 @@ Thus:
 
 Given that there's only two possible solutions: 
 
-* X --> Y
-* Y --> X
+* ![X \xrightarrow{} Y](https://render.githubusercontent.com/render/math?math=X%20%5Cxrightarrow%7B%7D%20Y)
+* ![Y \xrightarrow{} X](https://render.githubusercontent.com/render/math?math=Y%20%5Cxrightarrow%7B%7D%20X)
 
 We can do an independence test between X and Y over the intervention X:= N(0,1) 
 
@@ -36,25 +37,28 @@ The only problem is since we do not know the means and variances of the models w
 
 a) This is just solving a linear system:
 
-alpha * N_X + beta * N_y = 2 * gamma * N_X + 2 * delta * N_Y + N_X
-gamma * N_X + delta * N_Y = 2 * alpha * N_X + 2 * beta + N_Y + N_Y
+![\alpha N_X + \beta N_y = 2\gamma N_X + 2\delta N_Y + N_X](https://render.githubusercontent.com/render/math?math=%5Calpha%20N_X%20%2B%20%5Cbeta%20N_y%20%3D%202%5Cgamma%20N_X%20%2B%202%5Cdelta%20N_Y%20%2B%20N_X)
+
+![\gamma N_X + \delta N_Y = 2\alpha N_X + 2 \beta + N_Y + N_Y](https://render.githubusercontent.com/render/math?math=%5Cgamma%20N_X%20%2B%20%5Cdelta%20N_Y%20%3D%202%5Calpha%20N_X%20%2B%202%20%5Cbeta%20%2B%20N_Y%20%2B%20N_Y)
+
 
 There are four variables for two equations, so it seems we are in trouble. However, it's easy to come up with four equations for this, since parameters for N_Y and N_Y must match for both equations. Thus:
 
-alpha = 2 * gamma + 1
-beta = 2 * delta
-gamma = 2 * alpha
-delta = 2 * beta + 1
+![\alpha = 2\gamma + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%202%5Cgamma%20%2B%201)
+![\beta = 2\delta](https://render.githubusercontent.com/render/math?math=%5Cbeta%20%3D%202%5Cdelta)
+![\gamma = 2\alpha](https://render.githubusercontent.com/render/math?math=%5Cgamma%20%3D%202%5Calpha)
+![\delta = 2\beta + 1](https://render.githubusercontent.com/render/math?math=%5Cdelta%20%3D%202%5Cbeta%20%2B%201)
 
 Solving the equations we get that:
 
-alpha = -1/3 , beta = -2/3 , gamma = -2/3 , delta = -1/3 
+![\alpha = \frac{-1}{3} , \beta = \frac{-2}{3} , \gamma = \frac{-2}{3} , \delta = \frac{-1}{3}](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cfrac%7B-1%7D%7B3%7D%20%2C%20%5Cbeta%20%3D%20%5Cfrac%7B-2%7D%7B3%7D%20%2C%20%5Cgamma%20%3D%20%5Cfrac%7B-2%7D%7B3%7D%20%2C%20%5Cdelta%20%3D%20%5Cfrac%7B-1%7D%7B3%7D)
+
 
 Thus our final model is:
 
-X:= 2/3 * N_X -2/3 * N_Y 
-Y:= -2/3 * N_X + 2/3 * N_Y
+![X:= \frac{2}{3}N_X -\frac{2}{3}N_Y ](https://render.githubusercontent.com/render/math?math=X%3A%3D%20%5Cfrac%7B2%7D%7B3%7DN_X%20-%5Cfrac%7B2%7D%7B3%7DN_Y%20)
 
+![Y:= \frac{-2}{3}N_X + \frac{2}{3}N_Y](https://render.githubusercontent.com/render/math?math=Y%3A%3D%20%5Cfrac%7B-2%7D%7B3%7DN_X%20%2B%20%5Cfrac%7B2%7D%7B3%7DN_Y)
 
 b)
 
