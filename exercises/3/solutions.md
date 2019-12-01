@@ -101,7 +101,7 @@ Both equations give the same information:
 
 ![\alpha = \beta + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cbeta%20%2B%201)
 
-Thus we can choose ![\alpha = 3, \beta = 2](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%203%2C%20%5Cbeta%20%3D%202) and it will be a valid vector. Thus:
+Thus we can choose ![\alpha = 3, \beta = 2](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%203%2C%20%5Cbeta%20%3D%202) and it will be a valid vector. We can choose whatever distribution we care for ![N_X ](https://render.githubusercontent.com/render/math?math=N_X%20), then we get:
 
 ![N_X := N(0,1)](https://render.githubusercontent.com/render/math?math=N_X%20%3A%3D%20N(0%2C1))
 
