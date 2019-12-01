@@ -8,6 +8,12 @@ We know that:
 
 We want to understand the distributions of 4C and ![N_Y ](https://render.githubusercontent.com/render/math?math=N_Y%20)
  when their sum is 2.
+ 
+We also know that:
+
+![4C ~ N(0, 16) \xrightarrow{} \mu_{X} = 0, \sigma_{X} = 4](https://render.githubusercontent.com/render/math?math=4C%20~%20N(0%2C%2016)%20%5Cxrightarrow%7B%7D%20%5Cmu_%7BX%7D%20%3D%200%2C%20%5Csigma_%7BX%7D%20%3D%204)
+
+![N_Y ~ N(0,1) \xrightarrow{} \mu_{Y} = 0, \sigma_{Y} = 1](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(0%2C1)%20%5Cxrightarrow%7B%7D%20%5Cmu_%7BY%7D%20%3D%200%2C%20%5Csigma_%7BY%7D%20%3D%201)
 
 The distributions of the distributions that form a conditional distribution of a Gaussian follow this [result](https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random):
 
