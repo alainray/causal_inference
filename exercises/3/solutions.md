@@ -90,6 +90,7 @@ Assuming ![N_Y = -N_X ](https://render.githubusercontent.com/render/math?math=N_
 
 ![\beta N_X = \alpha N_X - N_X](https://render.githubusercontent.com/render/math?math=%5Cbeta%20N_X%20%3D%20%5Calpha%20N_X%20-%20N_X)
 
+Solving for ![\alpha, \beta](https://render.githubusercontent.com/render/math?math=%5Calpha%2C%20%5Cbeta):
 
 ![\alpha = \beta + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cbeta%20%2B%201)
 
