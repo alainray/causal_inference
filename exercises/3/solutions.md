@@ -9,8 +9,7 @@ We know that:
 We want to understand the distributions of 4C and ![N_Y ](https://render.githubusercontent.com/render/math?math=N_Y%20)
  when their sum is 2.
 
-The distributions of the distributions that form a conditional distribution of a Gaussian follow this result: 
-https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random
+The distributions of the distributions that form a conditional distribution of a Gaussian follow this [result](https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random):
 
 ![4C ~ N(2*\frac{16}{17}, \frac{16}{17})](https://render.githubusercontent.com/render/math?math=4C%20~%20N(2*%5Cfrac%7B16%7D%7B17%7D%2C%20%5Cfrac%7B16%7D%7B17%7D))
 ![N_Y ~ N(2*\frac{1}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(2*%5Cfrac%7B1%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
