@@ -11,8 +11,20 @@ We want to understand the distributions of 4C and ![N_Y ](https://render.githubu
 
 The distributions of the distributions that form a conditional distribution of a Gaussian follow this [result](https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random):
 
+![X + Y = Z \xrightarrow{} P(X| Z = c) ~ N(\mu_{X | c}, \sigma_{X | c}), P(Y|Z = c) ~ N(\mu_{Y | c}, \sigma_{Y | c})](https://render.githubusercontent.com/render/math?math=X%20%2B%20Y%20%3D%20Z%20%5Cxrightarrow%7B%7D%20P(X%7C%20Z%20%3D%20c)%20~%20N(%5Cmu_%7BX%20%7C%20c%7D%2C%20%5Csigma_%7BX%20%7C%20c%7D)%2C%20P(Y%7CZ%20%3D%20c)%20~%20N(%5Cmu_%7BY%20%7C%20c%7D%2C%20%5Csigma_%7BY%20%7C%20c%7D))
+
+
+![\mu_{X|c} = \mu_{X} + (c -\mu_{X} - \mu_{Y}) \frac{\sigma_{X}^2}{\sigma_{X}^2 + \sigma_{Y}^2}](https://render.githubusercontent.com/render/math?math=%5Cmu_%7BX%7Cc%7D%20%3D%20%5Cmu_%7BX%7D%20%2B%20(c%20-%5Cmu_%7BX%7D%20-%20%5Cmu_%7BY%7D)%20%5Cfrac%7B%5Csigma_%7BX%7D%5E2%7D%7B%5Csigma_%7BX%7D%5E2%20%2B%20%5Csigma_%7BY%7D%5E2%7D)
+
+![\mu_{Y|c} = \mu_{Y} + (c -\mu_{X} - \mu_{Y}) \frac{\sigma_{Y}^2}{\sigma_{X}^2 + \sigma_{Y}^2}](https://render.githubusercontent.com/render/math?math=%5Cmu_%7BY%7Cc%7D%20%3D%20%5Cmu_%7BY%7D%20%2B%20(c%20-%5Cmu_%7BX%7D%20-%20%5Cmu_%7BY%7D)%20%5Cfrac%7B%5Csigma_%7BY%7D%5E2%7D%7B%5Csigma_%7BX%7D%5E2%20%2B%20%5Csigma_%7BY%7D%5E2%7D)
+
+![\sigma_{X | c} = \sigma_{Y | c} = \sqrt{\frac{\sigma_{X}^2\sigma_{Y}^2}{\sigma_{X}^2 + \sigma_{Y}^2}}](https://render.githubusercontent.com/render/math?math=%5Csigma_%7BX%20%7C%20c%7D%20%3D%20%5Csigma_%7BY%20%7C%20c%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Csigma_%7BX%7D%5E2%5Csigma_%7BY%7D%5E2%7D%7B%5Csigma_%7BX%7D%5E2%20%2B%20%5Csigma_%7BY%7D%5E2%7D%7D)
+
+
 ![4C ~ N(2*\frac{16}{17}, \frac{16}{17})](https://render.githubusercontent.com/render/math?math=4C%20~%20N(2*%5Cfrac%7B16%7D%7B17%7D%2C%20%5Cfrac%7B16%7D%7B17%7D))
-![N_Y ~ N(2*\frac{1}{17}, \frac{1}{17})](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(2*%5Cfrac%7B1%7D%7B17%7D%2C%20%5Cfrac%7B1%7D%7B17%7D))
+
+![N_Y ~ N(2*\frac{1}{17}, \frac{16}{17})](https://render.githubusercontent.com/render/math?math=N_Y%20~%20N(2*%5Cfrac%7B1%7D%7B17%7D%2C%20%5Cfrac%7B16%7D%7B17%7D))
+
 
 Thus:
 
