@@ -32,6 +32,6 @@ Finally:
 
 ![E_{Y|X}\[Y\] = f(x) + \mu_{Y}](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5BY%5D%20%3D%20f(x)%20%2B%20%5Cmu_%7BY%7D)
 
-Rearraging terms:
+Rearranging terms:
 
 ![f(x) = E_{Y|X}\[Y\]  - \mu_{Y}](https://render.githubusercontent.com/render/math?math=f(x)%20%3D%20E_%7BY%7CX%7D%5BY%5D%20%20-%20%5Cmu_%7BY%7D)
