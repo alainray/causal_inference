@@ -26,7 +26,7 @@ The remaining integral is that of a probability distribution over its entire sup
 
 ![E_{Y|X}\[f(X)\] = f(x) ](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5Bf(X)%5D%20%3D%20f(x)%20)
 
-And N_y is independent of X, thus ![E_{Y|X}\[N_{Y}\] = E\[N_{Y}\] = \mu_{Y}](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5BN_%7BY%7D%5D%20%3D%20E%5BN_%7BY%7D%5D%20%3D%20%5Cmu_%7BY%7D)
+And ![N_y](https://render.githubusercontent.com/render/math?math=N_y) is independent of X, thus ![E_{Y|X}\[N_{Y}\] = E\[N_{Y}\] = \mu_{Y}](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5BN_%7BY%7D%5D%20%3D%20E%5BN_%7BY%7D%5D%20%3D%20%5Cmu_%7BY%7D)
 
 Finally:
 
