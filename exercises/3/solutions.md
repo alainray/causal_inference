@@ -48,7 +48,7 @@ We can do an independence test between X and Y over the intervention ![X:= N(0,1
 
 If we find correlation between X and Y then the model![X \xrightarrow{} Y](https://render.githubusercontent.com/render/math?math=X%20%5Cxrightarrow%7B%7D%20Y) is appropriate. If not, it's the other.
 
-The only problem is since we do not know the means and variances of the models we are trying to intervene, we could be unlucky and choose exactly the values that correspond to the observational distribution. Thus, we would need to do at least three interventions over the same variable to make sure we didn't randomly choose the correct distribution.
+The only problem is since we do not know the means and variances of the models we are trying to intervene, we could be unlucky and intervene exactly on the values that correspond to the observational distribution. Thus, we would need to do at least three different interventions over the same variable to make sure we didn't choose the correct distribution. 
 
 
 ### 3.8
