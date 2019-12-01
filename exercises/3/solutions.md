@@ -6,7 +6,8 @@ We know that:
 
 ![E = 4C + N_Y](https://render.githubusercontent.com/render/math?math=E%20%3D%204C%20%2B%20N_Y) and the right hand side distributes like ~ N(0, 17)
 
-We want to understand the distributions of 4C and N_Y when their sum is 2.
+We want to understand the distributions of 4C and ![N_Y ](https://render.githubusercontent.com/render/math?math=N_Y%20)
+ when their sum is 2.
 
 The distributions of the distributions that form a conditional distribution of a Gaussian follow this result: 
 https://stats.stackexchange.com/questions/9071/intuitive-explanation-of-contribution-to-sum-of-two-normally-distributed-random
@@ -26,9 +27,9 @@ Given that there's only two possible solutions:
 * ![X \xrightarrow{} Y](https://render.githubusercontent.com/render/math?math=X%20%5Cxrightarrow%7B%7D%20Y)
 * ![Y \xrightarrow{} X](https://render.githubusercontent.com/render/math?math=Y%20%5Cxrightarrow%7B%7D%20X)
 
-We can do an independence test between X and Y over the intervention X:= N(0,1) 
+We can do an independence test between X and Y over the intervention ![X:= N(0,1)](https://render.githubusercontent.com/render/math?math=X%3A%3D%20N(0%2C1))
 
-If we find correlation between X and Y then the model X --> Y is appropriate. If not, it's the other.
+If we find correlation between X and Y then the model![X \xrightarrow{} Y](https://render.githubusercontent.com/render/math?math=X%20%5Cxrightarrow%7B%7D%20Y) is appropriate. If not, it's the other.
 
 The only problem is since we do not know the means and variances of the models we are trying to intervene, we could be unlucky and choose exactly the values that correspond to the observational distribution. Thus, we would need to do at least three interventions over the same variable to make sure we didn't randomly choose the correct distribution.
 
@@ -42,7 +43,7 @@ a) This is just solving a linear system:
 ![\gamma N_X + \delta N_Y = 2\alpha N_X + 2 \beta + N_Y + N_Y](https://render.githubusercontent.com/render/math?math=%5Cgamma%20N_X%20%2B%20%5Cdelta%20N_Y%20%3D%202%5Calpha%20N_X%20%2B%202%20%5Cbeta%20%2B%20N_Y%20%2B%20N_Y)
 
 
-There are four variables for two equations, so it seems we are in trouble. However, it's easy to come up with four equations for this, since parameters for N_Y and N_Y must match for both equations. Thus:
+There are four variables for two equations, so it seems we are in trouble. However, it's easy to come up with four equations for this, since parameters for ![N_X ](https://render.githubusercontent.com/render/math?math=N_X%20) and ![N_Y ](https://render.githubusercontent.com/render/math?math=N_Y%20) must match for both equations. Thus:
 
 ![\alpha = 2\gamma + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%202%5Cgamma%20%2B%201)
 ![\beta = 2\delta](https://render.githubusercontent.com/render/math?math=%5Cbeta%20%3D%202%5Cdelta)
@@ -99,15 +100,15 @@ Both equations give the same information:
 
 ![\alpha = \beta + 1](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%20%5Cbeta%20%2B%201)
 
-Thus we can choose ![\alpha = 2, \beta = 3](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%202%2C%20%5Cbeta%20%3D%203) and it will be a valid vector. Thus:
+Thus we can choose ![\alpha = 3, \beta = 2](https://render.githubusercontent.com/render/math?math=%5Calpha%20%3D%203%2C%20%5Cbeta%20%3D%202) and it will be a valid vector. Thus:
 
 ![N_X := N(0,1)](https://render.githubusercontent.com/render/math?math=N_X%20%3A%3D%20N(0%2C1))
 
 ![N_Y := -N_X](https://render.githubusercontent.com/render/math?math=N_Y%20%3A%3D%20-N_X)
 
-![X:= 2* N_X](https://render.githubusercontent.com/render/math?math=X%3A%3D%202*%20N_X)
+![X:= 3* N_X](https://render.githubusercontent.com/render/math?math=X%3A%3D%203*%20N_X)
 
-![Y:= 3* N_X](https://render.githubusercontent.com/render/math?math=Y%3A%3D%203*%20N_X)
+![Y:= 2* N_X](https://render.githubusercontent.com/render/math?math=Y%3A%3D%202*%20N_X)
 
 
 Is a valid solution.
