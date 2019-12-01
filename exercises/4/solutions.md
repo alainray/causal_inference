@@ -20,7 +20,7 @@ By definition:
 
 ![E_{Y|X}\[f(X)\] = \int_{-\infty}^{\infty} f(x) p(y | x) dy](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5Bf(X)%5D%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20f(x)%20p(y%20%7C%20x)%20dy)
 
-![E_{Y|X}\\[z\] = \int_{-\infty}^{\infty} z p(y | x) dy](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5C%5Bz%5D%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20z%20p(y%20%7C%20x)%20dy)
+![E_{Y|X}\[z\] = \int_{-\infty}^{\infty} z p(y | x) dy](https://render.githubusercontent.com/render/math?math=E_%7BY%7CX%7D%5Bz%5D%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20z%20p(y%20%7C%20x)%20dy)
 
 We also know that:
 
