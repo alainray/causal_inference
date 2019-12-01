@@ -24,7 +24,7 @@ By definition:
 
 We also know that:
 
-P(y) = P(x,z)
+![P(y) = P(x,z)](https://render.githubusercontent.com/render/math?math=P(y)%20%3D%20P(x%2Cz))
 
 But x and z are independent. Thus:
 
